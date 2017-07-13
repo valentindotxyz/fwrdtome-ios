@@ -20,6 +20,19 @@
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSExceptionDomains</key>
+		<dict>
+			<key>fwrdtome.dev</key>
+			<dict>
+				<key>NSExceptionAllowsInsecureHTTPLoads</key>
+				<true/>
+				<key>NSIncludesSubdomains</key>
+				<true/>
+			</dict>
+		</dict>
+	</dict>
 	<key>NSExtension</key>
 	<dict>
 		<key>NSExtensionActivationRule</key>
@@ -29,10 +42,10 @@
 		</dict>
 		<key>NSExtensionAttributes</key>
 		<dict>
-			<key>NSExtensionJavaScriptPreprocessingFile</key>
-			<string>GetURL</string>
 			<key>NSExtensionActivationRule</key>
 			<string>TRUEPREDICATE</string>
+			<key>NSExtensionJavaScriptPreprocessingFile</key>
+			<string>GetURL</string>
 		</dict>
 		<key>NSExtensionMainStoryboard</key>
 		<string>MainInterface</string>

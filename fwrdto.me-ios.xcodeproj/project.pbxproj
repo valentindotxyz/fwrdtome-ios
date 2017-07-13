@@ -8,8 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		5AE62F0FD0D0D8E9CCB46F25 /* Pods_ShareExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C87BC9DADDF079EA36A34446 /* Pods_ShareExtension.framework */; };
+		A722098D1F178E2800EC2B56 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A722098C1F178E2800EC2B56 /* Media.xcassets */; };
+		A722098E1F178E2800EC2B56 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A722098C1F178E2800EC2B56 /* Media.xcassets */; };
 		A74867A31F1648C2004E788B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74867A21F1648C2004E788B /* Constants.swift */; };
 		A74867A41F1649E0004E788B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74867A21F1648C2004E788B /* Constants.swift */; };
+		A789D1031F166B2400B8B869 /* ApiKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = A789D1021F166B2400B8B869 /* ApiKey.swift */; };
+		A789D1041F166B7200B8B869 /* ApiKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = A789D1021F166B2400B8B869 /* ApiKey.swift */; };
 		A799B75F1F14E44900CA6F9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A799B75E1F14E44900CA6F9E /* AppDelegate.swift */; };
 		A799B7611F14E44900CA6F9E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A799B7601F14E44900CA6F9E /* ViewController.swift */; };
 		A799B7641F14E44900CA6F9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A799B7621F14E44900CA6F9E /* Main.storyboard */; };
@@ -53,9 +57,11 @@
 		4D781200DCEB61C4C7B30FFC /* Pods-ShareExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShareExtension.release.xcconfig"; path = "Pods/Target Support Files/Pods-ShareExtension/Pods-ShareExtension.release.xcconfig"; sourceTree = "<group>"; };
 		8AA28D85E81217C8E653A49F /* Pods-fwrdto.me-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fwrdto.me-ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-fwrdto.me-ios/Pods-fwrdto.me-ios.release.xcconfig"; sourceTree = "<group>"; };
 		A70E52343F24ACF807B12696 /* Pods_fwrdto_me_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fwrdto_me_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A722098C1F178E2800EC2B56 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		A748679F1F163600004E788B /* fwrdto.me-ios.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "fwrdto.me-ios.entitlements"; sourceTree = "<group>"; };
 		A74867A01F163B51004E788B /* ShareExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ShareExtension.entitlements; sourceTree = "<group>"; };
 		A74867A21F1648C2004E788B /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A789D1021F166B2400B8B869 /* ApiKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiKey.swift; sourceTree = "<group>"; };
 		A799B75B1F14E44900CA6F9E /* fwrdto.me-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "fwrdto.me-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A799B75E1F14E44900CA6F9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A799B7601F14E44900CA6F9E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -68,7 +74,7 @@
 		A7D4999E1F14E51F00AEFE16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		A7D499A01F14E51F00AEFE16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A7D499A81F14E60000AEFE16 /* GetURL.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = GetURL.js; sourceTree = "<group>"; };
-		A7D499AA1F14EA0200AEFE16 /* Link.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Link.swift; sourceTree = "<group>"; };
+		A7D499AA1F14EA0200AEFE16 /* Link.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Link.swift; path = ShareExtension/Link.swift; sourceTree = "<group>"; };
 		C87BC9DADDF079EA36A34446 /* Pods_ShareExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShareExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -104,7 +110,9 @@
 		A74867A11F1648B4004E788B /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				A7D499AA1F14EA0200AEFE16 /* Link.swift */,
 				A74867A21F1648C2004E788B /* Constants.swift */,
+				A789D1021F166B2400B8B869 /* ApiKey.swift */,
 			);
 			name = Shared;
 			sourceTree = "<group>";
@@ -152,7 +160,7 @@
 				A7D4999D1F14E51F00AEFE16 /* MainInterface.storyboard */,
 				A7D499A01F14E51F00AEFE16 /* Info.plist */,
 				A7D499A81F14E60000AEFE16 /* GetURL.js */,
-				A7D499AA1F14EA0200AEFE16 /* Link.swift */,
+				A722098C1F178E2800EC2B56 /* Media.xcassets */,
 			);
 			path = ShareExtension;
 			sourceTree = "<group>";
@@ -224,20 +232,26 @@
 				TargetAttributes = {
 					A799B75A1F14E44900CA6F9E = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 64JMSST3ZM;
+						DevelopmentTeam = 78JB43S8CH;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.SafariKeychain = {
 								enabled = 1;
 							};
 						};
 					};
 					A7D499981F14E51F00AEFE16 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 64JMSST3ZM;
+						DevelopmentTeam = 78JB43S8CH;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.SafariKeychain = {
 								enabled = 1;
 							};
 						};
@@ -270,6 +284,7 @@
 			files = (
 				A799B7691F14E44900CA6F9E /* LaunchScreen.storyboard in Resources */,
 				A799B7661F14E44900CA6F9E /* Assets.xcassets in Resources */,
+				A722098D1F178E2800EC2B56 /* Media.xcassets in Resources */,
 				A799B7641F14E44900CA6F9E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -279,6 +294,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7D4999F1F14E51F00AEFE16 /* MainInterface.storyboard in Resources */,
+				A722098E1F178E2800EC2B56 /* Media.xcassets in Resources */,
 				A7D499A91F14E60000AEFE16 /* GetURL.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -370,6 +386,7 @@
 			files = (
 				A799B7611F14E44900CA6F9E /* ViewController.swift in Sources */,
 				A799B75F1F14E44900CA6F9E /* AppDelegate.swift in Sources */,
+				A789D1031F166B2400B8B869 /* ApiKey.swift in Sources */,
 				A74867A31F1648C2004E788B /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -378,6 +395,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A789D1041F166B7200B8B869 /* ApiKey.swift in Sources */,
 				A74867A41F1649E0004E788B /* Constants.swift in Sources */,
 				A7D4999C1F14E51F00AEFE16 /* ShareViewController.swift in Sources */,
 				A7D499AB1F14EA0200AEFE16 /* Link.swift in Sources */,
@@ -522,10 +540,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "fwrdto.me-ios/fwrdto.me-ios.entitlements";
-				DEVELOPMENT_TEAM = 64JMSST3ZM;
+				DEVELOPMENT_TEAM = 78JB43S8CH;
 				INFOPLIST_FILE = "fwrdto.me-ios/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "xyz.valentin.fwrdto-me-ios";
+				PRODUCT_BUNDLE_IDENTIFIER = "fr.valentinpolo.fwrdto-me-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -538,10 +556,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "fwrdto.me-ios/fwrdto.me-ios.entitlements";
-				DEVELOPMENT_TEAM = 64JMSST3ZM;
+				DEVELOPMENT_TEAM = 78JB43S8CH;
 				INFOPLIST_FILE = "fwrdto.me-ios/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "xyz.valentin.fwrdto-me-ios";
+				PRODUCT_BUNDLE_IDENTIFIER = "fr.valentinpolo.fwrdto-me-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -552,11 +570,12 @@
 			baseConfigurationReference = 125F1C2D71CBFDFADC533F24 /* Pods-ShareExtension.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-Extension";
 				CODE_SIGN_ENTITLEMENTS = ShareExtension/ShareExtension.entitlements;
-				DEVELOPMENT_TEAM = 64JMSST3ZM;
+				DEVELOPMENT_TEAM = 78JB43S8CH;
 				INFOPLIST_FILE = ShareExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "xyz.valentin.fwrdto-me-ios.ShareExtension";
+				PRODUCT_BUNDLE_IDENTIFIER = "fr.valentinpolo.fwrdto-me-ios.extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -568,11 +587,12 @@
 			baseConfigurationReference = 4D781200DCEB61C4C7B30FFC /* Pods-ShareExtension.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-Extension";
 				CODE_SIGN_ENTITLEMENTS = ShareExtension/ShareExtension.entitlements;
-				DEVELOPMENT_TEAM = 64JMSST3ZM;
+				DEVELOPMENT_TEAM = 78JB43S8CH;
 				INFOPLIST_FILE = ShareExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "xyz.valentin.fwrdto-me-ios.ShareExtension";
+				PRODUCT_BUNDLE_IDENTIFIER = "fr.valentinpolo.fwrdto-me-ios.extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;

@@ -9,5 +9,14 @@
 import Foundation
 
 struct Constants {
-    static let API_ENDPOINT = "TEST"
+    
+    struct URLS {
+        static let API_ENDPOINT = "http://fwrdtome.dev/api"
+    }
+    
+    struct APP {
+        static let USER_DEFAULTS_SUIT_NAME = "group.fr.valentinpolo.fwrdto-me"
+        static let USER_DEFAULTS_KEYS_API_KEY = "API_KEY"
+    }
+        
 }
