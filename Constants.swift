@@ -11,7 +11,10 @@ import Foundation
 struct Constants {
     
     struct URLS {
-        static let API_ENDPOINT = "http://fwrdtome.dev/api"
+        static let API_ENDPOINT = "http://beta.fwrdto.me/api"
+        static let CONTACT_FORM = "https://vpfr.typeform.com/to/u1ABkW"
+        static let FWRDTO_ME_WEBSITE = "https://fwrdto.me/"
+        static let MAKER_WEBSITE = "https://valentin.xyz/"
     }
     
     struct APP {

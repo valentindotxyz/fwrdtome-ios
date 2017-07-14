@@ -24,6 +24,11 @@
 	<dict>
 		<key>NSExceptionDomains</key>
 		<dict>
+			<key>beta.fwrdto.me</key>
+			<dict>
+				<key>NSExceptionAllowsInsecureHTTPLoads</key>
+				<true/>
+			</dict>
 			<key>fwrdtome.dev</key>
 			<dict>
 				<key>NSExceptionAllowsInsecureHTTPLoads</key>
@@ -43,7 +48,10 @@
 		<key>NSExtensionAttributes</key>
 		<dict>
 			<key>NSExtensionActivationRule</key>
-			<string>TRUEPREDICATE</string>
+			<dict>
+				<key>NSExtensionActivationSupportsWebURLWithMaxCount</key>
+				<integer>1</integer>
+			</dict>
 			<key>NSExtensionJavaScriptPreprocessingFile</key>
 			<string>GetURL</string>
 		</dict>

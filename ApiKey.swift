@@ -63,6 +63,51 @@ class ApiKey: NSObject, NSCoding
         defaults?.synchronize();
     }
     
+    func updateEmailAddress(newEmailAddress: String?, onUpdated: @escaping () -> Void, onError: @escaping () -> Void)
+    {
+        if (newEmailAddress == nil || !Utils.isValidEmail(testStr: newEmailAddress!)) {
+            onError()
+            return
+        }
+        
+        let parameters = [
+            "api-key": self.uuid,
+            "email": newEmailAddress
+        ]
+        
+        Alamofire
+            .request("\(Constants.URLS.API_ENDPOINT)/update", method: .post, parameters: parameters, encoding: JSONEncoding.default)
+            .responseJSON {
+                response in
+                print(response)
+                print("Request: \(String(describing: response.request))")   // original url request
+                print("Response: \(String(describing: response.response))") // http url response
+                print("Result: \(response.result)")                         // response serialization result
+                
+                if let rawResult = response.result.value {
+                    print("UPDATE JSON: \(rawResult)") // serialized json response
+                    
+//                    let jsonApiKey = rawResult as! NSDictionary
+//                    print(jsonApiKey.value(forKey: "email")!)
+//                    
+//                    ApiKey(
+//                        uuid: (jsonApiKey.value(forKey: "uuid")! as! String),
+//                        email: jsonApiKey.value(forKey: "email")! as! String,
+//                        preview: true,
+//                        queued: false
+//                        ).save()
+//                    
+//                    let test = ApiKey.get()
+//                    
+//                    print(test)
+                    
+                    onUpdated()
+                } else {
+                    onError()
+                }
+        }
+    }
+    
     func updateSetting(setting: String, value: Any)
     {
         if (setting == "preview") {

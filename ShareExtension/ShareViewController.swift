@@ -26,9 +26,7 @@ class ShareViewController: UIViewController {
         if (apiKey == nil || !itemProvider.hasItemConformingToTypeIdentifier(propertyList)) {
             self.extensionContext!.completeRequest(returningItems: [], completionHandler: nil)
         }
-        
-        print("SHOULD BE GOOD TO GO NOW!")
-        
+                
         itemProvider.loadItem(forTypeIdentifier: propertyList, options: nil, completionHandler: { (item, error) -> Void in
             guard let dictionary = item as? NSDictionary else { return }
             

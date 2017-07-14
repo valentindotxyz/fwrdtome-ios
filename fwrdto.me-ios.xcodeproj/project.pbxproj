@@ -8,14 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		5AE62F0FD0D0D8E9CCB46F25 /* Pods_ShareExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C87BC9DADDF079EA36A34446 /* Pods_ShareExtension.framework */; };
-		A722098D1F178E2800EC2B56 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A722098C1F178E2800EC2B56 /* Media.xcassets */; };
+		A716A6D41F189B0900B5D733 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A716A6D31F189B0900B5D733 /* Utils.swift */; };
+		A716A6D51F189B0900B5D733 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A716A6D31F189B0900B5D733 /* Utils.swift */; };
+		A716A6D71F18B14F00B5D733 /* AboutAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A716A6D61F18B14F00B5D733 /* AboutAppViewController.swift */; };
 		A722098E1F178E2800EC2B56 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A722098C1F178E2800EC2B56 /* Media.xcassets */; };
 		A74867A31F1648C2004E788B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74867A21F1648C2004E788B /* Constants.swift */; };
 		A74867A41F1649E0004E788B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74867A21F1648C2004E788B /* Constants.swift */; };
 		A789D1031F166B2400B8B869 /* ApiKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = A789D1021F166B2400B8B869 /* ApiKey.swift */; };
 		A789D1041F166B7200B8B869 /* ApiKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = A789D1021F166B2400B8B869 /* ApiKey.swift */; };
 		A799B75F1F14E44900CA6F9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A799B75E1F14E44900CA6F9E /* AppDelegate.swift */; };
-		A799B7611F14E44900CA6F9E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A799B7601F14E44900CA6F9E /* ViewController.swift */; };
+		A799B7611F14E44900CA6F9E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A799B7601F14E44900CA6F9E /* HomeViewController.swift */; };
 		A799B7641F14E44900CA6F9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A799B7621F14E44900CA6F9E /* Main.storyboard */; };
 		A799B7661F14E44900CA6F9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A799B7651F14E44900CA6F9E /* Assets.xcassets */; };
 		A799B7691F14E44900CA6F9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A799B7671F14E44900CA6F9E /* LaunchScreen.storyboard */; };
@@ -57,6 +59,8 @@
 		4D781200DCEB61C4C7B30FFC /* Pods-ShareExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShareExtension.release.xcconfig"; path = "Pods/Target Support Files/Pods-ShareExtension/Pods-ShareExtension.release.xcconfig"; sourceTree = "<group>"; };
 		8AA28D85E81217C8E653A49F /* Pods-fwrdto.me-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fwrdto.me-ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-fwrdto.me-ios/Pods-fwrdto.me-ios.release.xcconfig"; sourceTree = "<group>"; };
 		A70E52343F24ACF807B12696 /* Pods_fwrdto_me_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fwrdto_me_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A716A6D31F189B0900B5D733 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		A716A6D61F18B14F00B5D733 /* AboutAppViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutAppViewController.swift; sourceTree = "<group>"; };
 		A722098C1F178E2800EC2B56 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		A748679F1F163600004E788B /* fwrdto.me-ios.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "fwrdto.me-ios.entitlements"; sourceTree = "<group>"; };
 		A74867A01F163B51004E788B /* ShareExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ShareExtension.entitlements; sourceTree = "<group>"; };
@@ -64,7 +68,7 @@
 		A789D1021F166B2400B8B869 /* ApiKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiKey.swift; sourceTree = "<group>"; };
 		A799B75B1F14E44900CA6F9E /* fwrdto.me-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "fwrdto.me-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A799B75E1F14E44900CA6F9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A799B7601F14E44900CA6F9E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A799B7601F14E44900CA6F9E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		A799B7631F14E44900CA6F9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A799B7651F14E44900CA6F9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A799B7681F14E44900CA6F9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -113,6 +117,7 @@
 				A7D499AA1F14EA0200AEFE16 /* Link.swift */,
 				A74867A21F1648C2004E788B /* Constants.swift */,
 				A789D1021F166B2400B8B869 /* ApiKey.swift */,
+				A716A6D31F189B0900B5D733 /* Utils.swift */,
 			);
 			name = Shared;
 			sourceTree = "<group>";
@@ -143,11 +148,12 @@
 			children = (
 				A748679F1F163600004E788B /* fwrdto.me-ios.entitlements */,
 				A799B75E1F14E44900CA6F9E /* AppDelegate.swift */,
-				A799B7601F14E44900CA6F9E /* ViewController.swift */,
+				A799B7601F14E44900CA6F9E /* HomeViewController.swift */,
 				A799B7621F14E44900CA6F9E /* Main.storyboard */,
 				A799B7651F14E44900CA6F9E /* Assets.xcassets */,
 				A799B7671F14E44900CA6F9E /* LaunchScreen.storyboard */,
 				A799B76A1F14E44900CA6F9E /* Info.plist */,
+				A716A6D61F18B14F00B5D733 /* AboutAppViewController.swift */,
 			);
 			path = "fwrdto.me-ios";
 			sourceTree = "<group>";
@@ -284,7 +290,6 @@
 			files = (
 				A799B7691F14E44900CA6F9E /* LaunchScreen.storyboard in Resources */,
 				A799B7661F14E44900CA6F9E /* Assets.xcassets in Resources */,
-				A722098D1F178E2800EC2B56 /* Media.xcassets in Resources */,
 				A799B7641F14E44900CA6F9E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -384,7 +389,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A799B7611F14E44900CA6F9E /* ViewController.swift in Sources */,
+				A716A6D41F189B0900B5D733 /* Utils.swift in Sources */,
+				A799B7611F14E44900CA6F9E /* HomeViewController.swift in Sources */,
+				A716A6D71F18B14F00B5D733 /* AboutAppViewController.swift in Sources */,
 				A799B75F1F14E44900CA6F9E /* AppDelegate.swift in Sources */,
 				A789D1031F166B2400B8B869 /* ApiKey.swift in Sources */,
 				A74867A31F1648C2004E788B /* Constants.swift in Sources */,
@@ -395,6 +402,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A716A6D51F189B0900B5D733 /* Utils.swift in Sources */,
 				A789D1041F166B7200B8B869 /* ApiKey.swift in Sources */,
 				A74867A41F1649E0004E788B /* Constants.swift in Sources */,
 				A7D4999C1F14E51F00AEFE16 /* ShareViewController.swift in Sources */,
