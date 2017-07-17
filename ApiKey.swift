@@ -77,30 +77,10 @@ class ApiKey: NSObject, NSCoding
         
         Alamofire
             .request("\(Constants.URLS.API_ENDPOINT)/update", method: .post, parameters: parameters, encoding: JSONEncoding.default)
-            .responseJSON {
-                response in
-                print(response)
-                print("Request: \(String(describing: response.request))")   // original url request
-                print("Response: \(String(describing: response.response))") // http url response
-                print("Result: \(response.result)")                         // response serialization result
-                
+            .responseJSON { response in                
                 if let rawResult = response.result.value {
-                    print("UPDATE JSON: \(rawResult)") // serialized json response
-                    
-//                    let jsonApiKey = rawResult as! NSDictionary
-//                    print(jsonApiKey.value(forKey: "email")!)
-//                    
-//                    ApiKey(
-//                        uuid: (jsonApiKey.value(forKey: "uuid")! as! String),
-//                        email: jsonApiKey.value(forKey: "email")! as! String,
-//                        preview: true,
-//                        queued: false
-//                        ).save()
-//                    
-//                    let test = ApiKey.get()
-//                    
-//                    print(test)
-                    
+                    print("/api/update: \(rawResult)")
+                
                     onUpdated()
                 } else {
                     onError()
@@ -134,16 +114,13 @@ class ApiKey: NSObject, NSCoding
             .request("\(Constants.URLS.API_ENDPOINT)/register", method: .post, parameters: parameters, encoding: JSONEncoding.default)
             .responseJSON {
                 response in
-                    print(response)
-                    print("Request: \(String(describing: response.request))")   // original url request
-                    print("Response: \(String(describing: response.response))") // http url response
-                    print("Result: \(response.result)")                         // response serialization result
-            
                     if let rawResult = response.result.value {
-                        print("REGISTER JSON: \(rawResult)") // serialized json response
-                        
                         let jsonApiKey = rawResult as! NSDictionary
-                        print(jsonApiKey.value(forKey: "email")!)
+                        
+                        if (jsonApiKey.value(forKey: "uuid") == nil || jsonApiKey.value(forKey: "email") == nil) {
+                            onError()
+                            return;
+                        }
                         
                         ApiKey(
                             uuid: (jsonApiKey.value(forKey: "uuid")! as! String),
@@ -151,10 +128,6 @@ class ApiKey: NSObject, NSCoding
                             preview: true,
                             queued: false
                         ).save()
-                        
-                        let test = ApiKey.get()
-                        
-                        print(test)
                         
                         onRegistered()
                     } else {

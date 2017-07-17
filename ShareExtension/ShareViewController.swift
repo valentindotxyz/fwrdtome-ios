@@ -17,31 +17,39 @@ class ShareViewController: UIViewController {
         NSKeyedArchiver.setClassName("ApiKey", for: ApiKey.self)
         NSKeyedUnarchiver.setClass(ApiKey.self, forClassName: "ApiKey")
         
-        let extensionItem = extensionContext?.inputItems.first as! NSExtensionItem
-        let itemProvider = extensionItem.attachments?.first as! NSItemProvider
-        let propertyList = String(kUTTypePropertyList)
-        
         let apiKey = ApiKey.get()
         
-        if (apiKey == nil || !itemProvider.hasItemConformingToTypeIdentifier(propertyList)) {
+        if (apiKey == nil) {
             self.extensionContext!.completeRequest(returningItems: [], completionHandler: nil)
         }
-                
-        itemProvider.loadItem(forTypeIdentifier: propertyList, options: nil, completionHandler: { (item, error) -> Void in
-            guard let dictionary = item as? NSDictionary else { return }
-            
-            OperationQueue.main.addOperation {
-                if let results = dictionary[NSExtensionJavaScriptPreprocessingResultsKey] as? NSDictionary,
-                    let urlString = results["URL"] as? String,
-                    let titleString = results["title"] as? String
-                {
-                    Link
-                        .init(title: titleString, link: urlString)
-                        .send(withApiKey: apiKey!, onSentToApi: {
-                            self.extensionContext!.completeRequest(returningItems: [], completionHandler: nil)
+        
+        if let item = extensionContext?.inputItems.first as? NSExtensionItem {
+            if let attachments = item.attachments as? [NSItemProvider] {
+                for attachment: NSItemProvider in attachments {
+                    if attachment.hasItemConformingToTypeIdentifier("public.url") {
+                        attachment.loadItem(forTypeIdentifier: "public.url", options: nil, completionHandler: { (url, error) in
+                            if let link = url as? NSURL {
+                                Link(link: link.absoluteString!, title: nil).send(withApiKey: apiKey!, onSentToApi: {
+                                    self.extensionContext!.completeRequest(returningItems: [], completionHandler: nil)
+                                })
+                            }
                         })
+                    } else if (attachment.hasItemConformingToTypeIdentifier(String(kUTTypePropertyList))) {
+                        attachment.loadItem(forTypeIdentifier: String(kUTTypePropertyList), options: nil, completionHandler: { (item, error) -> Void in
+                            guard let dictionary = item as? NSDictionary else { return }
+                            
+                            if let results = dictionary[NSExtensionJavaScriptPreprocessingResultsKey] as? NSDictionary,
+                                let link = results["URL"] as? String,
+                                let title = results["title"] as? String
+                            {
+                                Link(link: link, title: title).send(withApiKey: apiKey!, onSentToApi: {
+                                    self.extensionContext!.completeRequest(returningItems: [], completionHandler: nil)
+                                })
+                            }
+                        })
+                    }
                 }
             }
-        })
+        }        
     }
 }

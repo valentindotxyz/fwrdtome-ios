@@ -117,7 +117,7 @@ class HomeViewController: UIViewController, UITextFieldDelegate {
         
         if let emailAddress = apiKey?.email {
             emailInput.text = emailAddress
-            registerButton.setTitle("Update", for: .normal)
+            registerButton.setTitle("Update email address", for: .normal)
             registerButton.isEnabled = true;
         }
         

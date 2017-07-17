@@ -11,11 +11,6 @@ import UIKit
 
 class AboutAppViewController: UIViewController
 {
-    @IBAction func goToFwrdtomesWebsite(_ sender: UIButton)
-    {
-        UIApplication.shared.open(URL(string: Constants.URLS.FWRDTO_ME_WEBSITE)!, options: [:], completionHandler: nil)
-    }
-    
     @IBAction func goToValentinPolosWebsite(_ sender: UIButton)
     {
         UIApplication.shared.open(URL(string: Constants.URLS.MAKER_WEBSITE)!, options: [:], completionHandler: nil)
@@ -24,6 +19,11 @@ class AboutAppViewController: UIViewController
     @IBAction func goToSupport(_ sender: UIButton)
     {
         UIApplication.shared.open(URL(string: Constants.URLS.CONTACT_FORM)!, options: [:], completionHandler: nil)
+    }
+    
+    @IBAction func goToDonate(_ sender: UIButton)
+    {
+        UIApplication.shared.open(URL(string: Constants.URLS.DONATE_URL)!, options: [:], completionHandler: nil)
     }
     
     @IBAction func onCloseButtonClicked(_ sender: UIButton)

@@ -51,7 +51,7 @@
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mea-mf-D2D">
-                                <rect key="frame" x="25" y="344" width="292" height="30"/>
+                                <rect key="frame" x="25" y="348" width="292" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Register"/>
@@ -100,7 +100,7 @@
                                 <state key="normal" title="Choose timing..."/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kke-Nh-H1x">
-                                <rect key="frame" x="107" y="637" width="161" height="22"/>
+                                <rect key="frame" x="107" y="631" width="161" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <state key="normal" title="About fwrdto.me">
@@ -160,36 +160,25 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PlN-ud-k4X">
-                                <rect key="frame" x="16" y="116" width="343" height="284"/>
+                                <rect key="frame" x="11" y="116" width="348" height="284"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <mutableString key="text">fwrdto.me is made by Valentin Polo from Lille, France. It was launched on May 2016, firstly as a bookmarklet and then as a Google Chrome Extension too.
+                                <string key="text">fwrdto.me was made by Valentin Polo from Lille, France. It was launched on May 2016, firstly as a bookmarklet and then as a Google Chrome Extension too.
 
 It came from the frustation of not being capable to send quickly oneself a link when browsing the internet.
 
 A year later, fwrdto.me joins the App Store and add its simplicity of use to your iPhone through an extension.
 
-fwrdto.me is provided free of charge as the maker uses it intensively everyday.</mutableString>
+fwrdto.me is provided free of charge (even without ad!) as the maker built it and uses it daily for his personal needs.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <dataDetectorType key="dataDetectorTypes" link="YES"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sym-MQ-Ztg">
-                                <rect key="frame" x="16" y="419" width="241" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
-                                <state key="normal" title="fwrdto.me's website">
-                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="goToFwrdtomesWebsite:" destination="Ar9-Ja-Oqa" eventType="touchUpInside" id="wZP-OS-yzw"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1cV-4k-xqd">
-                                <rect key="frame" x="16" y="447" width="241" height="29"/>
+                                <rect key="frame" x="16" y="445" width="241" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
-                                <state key="normal" title="Valentin Polo's website">
+                                <state key="normal" title="Maker's Website">
                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -197,7 +186,7 @@ fwrdto.me is provided free of charge as the maker uses it intensively everyday.<
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qlM-lg-TNI">
-                                <rect key="frame" x="16" y="494" width="241" height="29"/>
+                                <rect key="frame" x="16" y="482" width="241" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
                                 <state key="normal" title="Support">
@@ -208,13 +197,25 @@ fwrdto.me is provided free of charge as the maker uses it intensively everyday.<
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UD9-KR-nJJ">
-                                <rect key="frame" x="16" y="28" width="39" height="30"/>
+                                <rect key="frame" x="320" y="28" width="39" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Close">
                                     <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="onCloseButtonClicked:" destination="Ar9-Ja-Oqa" eventType="touchUpInside" id="MmA-RR-Ijo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tjf-g2-xZ5">
+                                <rect key="frame" x="16" y="520" width="241" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                <state key="normal" title="Donate">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="goToDonate:" destination="Ar9-Ja-Oqa" eventType="touchUpInside" id="fSV-cZ-Uyb"/>
+                                    <action selector="goToSupport:" destination="Ar9-Ja-Oqa" eventType="touchUpInside" id="fKo-0K-7B8"/>
                                 </connections>
                             </button>
                         </subviews>
